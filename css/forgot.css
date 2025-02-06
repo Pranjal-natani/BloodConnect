@@ -1,0 +1,133 @@
+body{
+    background-image: url('res/images/P1.png');
+    background-size: cover;
+}
+.card-container{
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 8;
+    bottom:auto;
+}
+
+.card{
+    background: #efeff1;
+    border-radius: 4px;
+    color: #444444;
+    height: 275px;
+    border:2px solid black;
+    width:330px;
+}
+.card .header {
+    margin: 10px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
+.modal-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+.input-field{
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field input{ 
+    width: 100%;
+    max-height: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: black;
+    color: #fff;
+    transition: .4s;
+}
+.btn {
+    border: 2px solid black;
+    border-radius: 2px;
+    display: inline-block;
+    height: 41px;
+    line-height: 36px;
+    padding: 0 6px;
+    font-family: inherit;
+    font-weight: 100;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.btn-rotate {
+    color: #212529;
+    background-color: #ddd;
+}
+
+.btn-rotate:hover {
+    color: #212529;
+    background-color: #c9b0e9;
+}
+
+.btn-rotate:focus{
+    outline: none;
+    border: none;
+}
+
+.btn-submit {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #212529;
+    font-weight: bold;
+    background-color: #ddd;
+    border: 2px solid black;
+}
+
+.btnn-submit {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #212529;
+    font-weight: bold;
+    background-color: #ddd;
+    border: 2px solid black;
+}
+.btn-submit:hover {
+    color: #212529;
+    background-color: #c9b0e9;
+}
+
+.btn-submit:focus{
+    outline: none;
+    border: none;
+}
+.message
+{
+    font-size: 19px;
+    text-align: center;
+}
+.c{
+padding-left:73px;
+}

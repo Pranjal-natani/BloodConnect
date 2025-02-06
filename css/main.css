@@ -1,0 +1,547 @@
+/*********************Basic********************/
+*{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+.bckg
+{
+	position: relative;
+	z-index: 1;
+	object-fit: fill;
+	overflow-y: auto; /* Enables vertical scrollbar */
+	min-width: 100%;
+	min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* html, body{
+	background-color: #abafc1;
+	color: #ffffff;
+	font-size: 17px;
+	overflow: hidden;
+	height: 100%;
+} */
+
+body {
+    background-image: url('res/images/finallll.jpg');
+    background-size: cover;
+    overflow-y: auto; /* Add vertical scrollbar */
+    overflow-x: hidden; /* Disable horizontal scrollbar if not needed */
+    background-attachment: fixed; /* Optional for a fixed background */
+    height: auto; /* Allow content to determine height */
+}
+
+body::-webkit-scrollbar, .bckg::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb, .bckg::-webkit-scrollbar-thumb {
+  background: #555; /* Scrollbar thumb color */
+  border-radius: 5px; /* Round the scrollbar edges */
+}
+
+body::-webkit-scrollbar-track, .bckg::-webkit-scrollbar-track {
+  background: #ddd; /* Scrollbar track color */
+}
+
+h1,h2,h3{
+	color: black;
+}
+img{
+	/* filter: drop-shadow(5px 5px 5px #000); */
+	color: red;
+}
+p{
+	margin-bottom: 20px;
+}
+/***************************************************/
+/******************title and logout*****************/
+.title{
+	text-shadow: 5px 6px 10px #00000079; 
+	color: red;
+	font-size: 35px;
+	font-weight: bold;
+	/* font-style: italic; */
+	position: relative;
+	z-index: 2;
+}
+.header {
+	box-shadow: 0px 0px 7px #000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background: linear-gradient(to right, rgb(226, 215, 223),#ac9ef2);
+	/* background-color: rgb(226, 215, 223);   */
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	padding-bottom: 10px;
+	z-index: 2;
+}
+/* .logout{
+	float: right;
+	height: 30px;
+	border: 3px solid black;
+	margin-top: 15px;
+} */
+/*************************************************/
+/**************Form input and text area***********/
+.input{
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	background: linear-gradient(white,#aaa);  
+	margin-top: 4px;
+	height: 44px;
+}
+
+.userinput{
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	background: linear-gradient(white,#aaa);  
+	margin-top: 4px;
+	height: 44px;
+  width: 352px;
+}
+
+.area{
+	height: 100px;
+}
+/**********************************************/
+/*************Menus and tabs*******************/
+.tabsWraper { 
+	/* background: radial-gradient(rgb(115, 105, 190),#f0c0de); */
+	box-shadow: 0px 5px 5px #000;
+	/* list-style-type: none; */
+	width: 21%;
+	position: fixed;
+	max-height: 100%;
+	backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+	overflow-y:hidden;
+	z-index: 10;
+}
+
+.tabs a {
+	/* background: radial-gradient( rgb(159, 155, 195),#f0c0de); */
+	/* background-color: rgb(226, 215, 223); */
+	border: 1px solid black;
+	font-size: 20px;
+	height: 41.6px;
+	display: block;
+	color: #070606;
+	font-weight: bold;
+	/* font-style: italic; */
+	padding-top: 50px;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	z-index: 10;
+}
+.tabs a.active {
+	/* background-color: #eee; */
+	color: #070606;
+}
+.tabs a:hover {
+	background-image:linear-gradient(pink,rgb(170, 170, 239));
+	color: #000;
+}
+/*******************************************/
+/**************contents section*************/
+.contents{
+	/* background: linear-gradient(to right ,rgb(100, 108, 156),#906981);
+	background-color: #3e5e7f; */
+	margin-left:45%;
+	padding:10px 16px;
+  margin-top: 90px;
+	position: relative;
+	z-index: 2;
+	/* opacity: 0.8; */
+	font-size: 18px;
+}
+
+.container{
+  position: relative;
+  overflow: hidden;
+}
+
+.usercontents{
+	/* background: linear-gradient(to right ,rgb(100, 108, 156),#906981);
+	background-color: #3e5e7f; */
+	margin-left:40%;
+	padding:10px 16px;
+  margin-top: 90px;
+	position: relative;
+	z-index: 2;
+	/* opacity: 0.8; */
+	font-size: 18px;
+}
+
+.b {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: auto;
+    height: auto; /* Or specify a fixed height if necessary */
+    overflow: auto; /* Or use `auto` if content should scroll */
+}
+
+.parent-container {
+    position: relative; /* This makes `.b` position relative to this container */
+    height: 100%; /* Ensure enough height for content */
+}
+
+/*********************************************/
+/****************Custom Button****************/
+.btn{  
+	font-size: 15px;
+	color: #000;  
+	background-color: #aaa;  
+	padding: 7px 15px 7px 15px;  
+	box-shadow: inset 0px 0px 20px 0px white;
+	border: 2px solid black;
+	border-radius: 3px; 
+	font-weight: bold;
+	transition-delay: 0.6s ease;
+}  
+
+.userbtn{  
+	font-size: 15px;
+	color: #000;  
+	background-color: #aaa;  
+	padding: 7px 15px 7px 15px;  
+	box-shadow: inset 0px 0px 20px 0px white;
+	border: 2px solid black;
+	border-radius: 3px; 
+  margin-left: 30px;
+	font-weight: bold;
+	transition-delay: 0.6s ease;
+}  
+
+.btn:hover{
+	background-color: red; 
+	box-shadow: none;
+	color: white;
+	transition: 0.6s ease;
+}
+/********************************************/
+/****************Custom table****************/
+table {
+	border-collapse: collapse;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	min-width: 400px;
+  margin-left: -60px;
+}
+tr {
+	background-color: #eee;
+	color: #000;
+	text-align: left;
+  font-weight: bold;
+}
+th{
+	padding: 12px 15px;
+	background-color: #8ca3bb;
+	color: #f30808;
+	text-align: left;
+  border: 2px solid black;
+}
+td{
+  background: linear-gradient(#c87171, #a2a2b5);
+	padding: 12px 15px;
+  border:2px solid black ;
+}
+/**********************************************/
+.reg
+{
+	background-color: blueviolet;
+}
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+} */
+
+.c {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin-left: -58px;
+  margin-top: -20px;
+  background: linear-gradient(135deg, #6c9bc8, #d84444);
+  border: 2px solid black;
+  height:540px;
+}
+
+.c .title {
+  font-size: 29px;
+  font-weight:bold;
+  position: relative;
+  color: black;
+}
+
+.c .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.c form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 60px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  margin-right: 11px;
+  background: #f4eef6;
+  border: 2px solid black;
+  margin-left: 7px;
+  margin-right: 10px;
+  /* transition: all 0.3s ease; */
+}
+
+/* When dot 1 (Male) is checked, change the dot style */
+#dot-1:checked ~ .category label .dot.one {
+  background: #434244;
+  border-color: #110f0f;
+}
+
+/* When dot 2 (Female) is checked, change the dot style */
+#dot-2:checked ~ .category label .dot.two {
+  background: #434244;
+  border-color: #110f0f;
+}
+
+/* Hide the actual radio buttons */
+form input[type="radio"] {
+  display: none;
+}
+
+/* Style for the labels */
+form .category label {
+  cursor: pointer;
+}
+/* Style for the dot */
+form .category label .dot {
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	background: #f4eef6;
+	border: 2px solid black;
+	margin-left: 7px;
+	margin-right: 10px;
+	display: inline-block; /* Ensure the dot is visible inline */
+  }
+  
+  /* When dot 1 (Male) is checked, change the dot style */
+  #dot-1:checked ~ .category label .dot.one {
+	background: #434244;
+	border-color: #110f0f;
+  }
+  
+  /* When dot 2 (Female) is checked, change the dot style */
+  #dot-2:checked ~ .category label .dot.two {
+	background: #434244;
+	border-color: #110f0f;
+  }
+  
+  /* Hide the actual radio buttons */
+  form input[type="radio"] {
+	display: none;
+  }
+  
+  /* Style for the labels */
+  form .category label {
+	cursor: pointer;
+  }
+  
+form .button {
+  height: 45px;
+  margin: 35px 0
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #070707;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  border:2px solid black;
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+/* Responsive media query code for mobile devices */
+@media(max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+/* Responsive media query code for mobile devices */
+@media(max-width: 459px) {
+  .c .content .category {
+    flex-direction: column;
+  }
+}
+
+
+.logout {
+  align-items: center;
+  background-image: linear-gradient(144deg,#239ced,#eb1010 50%, #121111,rgb(6,8,105));
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #0f0e0e;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  float:right;
+  margin-left: 1380px;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 10;
+}
+
+.logout :hover{
+  background-color: #ff0037;
+}
+
+.logout :active,
+.logout :hover {
+  outline:auto;
+color: #ffffff;
+}
+
+.logout  span {
+  background-image: linear-gradient(144deg, #f4efef ,#f9082d 90%, #41373e);
+  padding: 10px 15px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.logout :hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .logout{
+    font-size: 17px;
+    min-width: 122px;
+  }
+}

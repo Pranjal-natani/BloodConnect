@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0; /* Reset margins */
+}
+
+html {
+    background: linear-gradient(#efd2e8, #cde5f5, #232222);  
+}
+
+img {
+    filter: drop-shadow(5px 5px 5px #000);
+}
+
+/* form {
+    font-family: serif;
+    color: red;
+    width: 250px;  
+    border: 1px solid #96097c; 
+    margin: auto; 
+    padding: 30px;  
+    border-radius: 6px; 
+    background: linear-gradient(rgb(238, 202, 222), #dbdefd);  
+    position: relative; 
+} */
+
+/* #btn {  
+    width: 40%;
+    font-size: 15px;
+    color: white;  
+    background: red;
+    margin-left: 60%; 
+    padding: 7px 15px; 
+    border: none;
+    border-radius: 3px; 
+    transition: background 0.3s ease;
+}   */
+/* 
+.input {
+    width: 95%;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    background: linear-gradient(white, #aaa);  
+    margin-top: 4px;
+    height: 20px;
+} */
+
+/* #btn:hover {
+    background: linear-gradient(red, black, red); 
+} */
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin: 80px 0 20px 0; 
+    position: fixed;
+    top: 20px;
+    left: 65%;
+    z-index: 2;
+    text-align: center; /* Center title text */
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+}
+
+.video-container {
+    position: relative; 
+    display: flex;
+    justify-content: center; /* Center content */
+    overflow: hidden;
+    width: 100%; /* Full width */
+    height: auto; /* Fixed height */
+    z-index: 1;
+}  
+
+video {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 739px; /* Maintain aspect ratio */
+    object-fit: cover;
+    opacity: 0.8; 
+}  
+
+.overlayy {
+    position: absolute; 
+    top: 35%; 
+    left: 50%; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 2; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.main-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
+    /* background: linear-gradient(to right,rgb(238, 202, 222), #dbdefd);   */
+    margin-left: auto;
+    position:relative;
+  }
+  
+  /* entire container, keeps perspective */
+  .card-container {
+      perspective: 500px;
+  }
+  /* flip the pane when hovered */
+  .card-container.rotate .card{
+      transform: rotateY( 180deg );
+  }
+  /* flip speed goes here */
+  .card {
+      transition: transform .85s;
+      transform-style: preserve-3d;
+      position: relative;
+  }
+  
+  .login-form, .signup-form {
+    background: linear-gradient(  rgb(150, 65, 115),#a24e4e, rgb(249, 3, 3));
+    /* background : rgb(150, 65, 115);  */
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* background-color: #FFF; */
+      box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+  }
+  
+  /* front pane, placed above back */
+  .login-form {
+      z-index: 2;
+  }
+  
+  /* back, initially hidden pane */
+  .signup-form {
+      transform: rotateY(180deg);
+      z-index: 3;
+  }
+  
+  /*        Style       */
+  .card-container{
+      width: 300px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 8;
+      bottom:auto;
+  }
+  
+  .card{
+      background: #FFFFFF;
+      border-radius: 4px;
+      color: #444444;
+  }
+  
+  .card-container, .login-form, .signup-form {
+      height: 420px;
+      border-radius: 4px;
+  }
+  .login-form, .signup-form {
+      width: 100%;
+      height: 396px;
+      border-radius: 4px;
+  }
+  .card .header {
+      margin: 10px;
+      padding: 10px 0 10px 0;
+      text-align: center;
+      border-bottom: 1px solid black;
+      color: black;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+  }
+  .card .content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: none;
+      flex: 1;
+  }
+  .card .footer {
+      border-top: 1px solid black   ;
+      color: black;
+      font-weight: bold;
+      padding: 5px 0 5px 0;
+      text-align: center;
+  }
+  
+  .btn {
+      border: none;
+      border-radius: 2px;
+      display: inline-block;
+      height: 36px;
+      line-height: 36px;
+      padding: 0 16px;
+      font-family: inherit;
+      font-weight: 100;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: .4s;
+  }
+  
+  .btn-rotate {
+      color: #212529;
+      background-color: #ddd;
+  }
+  
+  .btn-rotate:hover {
+      color: #212529;
+      background-color: #c9b0e9;
+  }
+  
+  .btn-rotate:focus{
+      outline: none;
+      border: none;
+  }
+  
+  .btn-submit {
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 20px;
+      text-transform: uppercase;
+      color: #212529;
+      font-weight: bold;
+      background-color: #ddd;
+  }
+  
+  .btn-submit:hover {
+      color: #212529;
+      background-color: #c9b0e9;
+  }
+  
+  .btn-submit:focus{
+      outline: none;
+      border: none;
+  }
+  
+  form{
+      width: 100%;
+  }
+  
+  .input-field{
+      position: relative;
+      width: 90%;
+      margin: 20px auto;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .input-field input{ 
+      width: 100%;
+      max-height: 20px;
+      padding: 20px;
+      margin-bottom: 10px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      background-color: black;
+      color: #fff;
+      transition: .4s;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #fff;
+  }
+  ::-moz-placeholder {
+    color: #fff;
+  }
+  :-ms-input-placeholder {
+    color: #fff;
+  }
+  ::-ms-input-placeholder {
+    color: #fff;
+  }
+  ::placeholder {
+    color: #fff;
+  }
+  
+  .input-field input:focus{
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .see-password{
+      position: absolute;
+      right: 10px;
+      padding-bottom: 5px;
+      cursor: pointer;
+  }
+  
+  .group input{
+      padding-right: 40px;
+  }
+
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+#alert-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3ce1e7; /* BloodConnect theme color */
+}
+
+#alert-ok-btn {
+    padding: 3px 6px;
+    background-color: #e7b13c; 
+    color: rgb(200, 205, 207);
+    border: 2px solid black;
+    cursor: pointer;
+}

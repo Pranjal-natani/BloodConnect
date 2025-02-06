@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hexagon with Hover Border and Space</title>
+<style>
+  .hexagon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Border hexagon that appears on hover */
+  .hexagon-border {
+    position: relative;
+    width: 130px; /* Larger size to create space around the hexagon */
+    height: 75px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Inner hexagon */
+  .hexagon {
+    position: absolute;
+    top: 10px; /* Space between the hexagon and the border */
+    left: 10px;
+    width: 100px;
+    height: 57.74px;
+    background-color: #3498db;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  /* Show hexagonal border on hover */
+  .hexagon-border:hover {
+    background-color: #2c3e50; /* Border color */
+  }
+</style>
+</head>
+<body>
+<div class="hexagon-container">
+  <div class="hexagon-border">
+    <div class="hexagon"></div>
+  </div>
+</div>
+</body>
+</html>
