@@ -5,7 +5,7 @@ BloodConnect is a comprehensive and innovative web-based application designed to
 By centralizing blood stock information, donor details, and request management in a single platform, BloodConnect addresses logistical and operational challenges while promoting the spirit of social responsibility.
 
 🚀 Getting Started
-This project was developed as part of the VTU 5th Sem ISE DBMS mini-project. It is primarily a database demonstration and is not meant for deployment on a live web server. Security implementations are minimal and should be enhanced before real-world usage.
+This project was developed as part of the JECRC University MCA 3rd Semester Major Project.
 
 📁 Project File Structure
 database/ – Contains the database file needed for setup.
