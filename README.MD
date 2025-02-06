@@ -7,21 +7,6 @@ By centralizing blood stock information, donor details, and request management i
 🚀 Getting Started
 This project was developed as part of the JECRC University MCA 3rd Semester Major Project.
 
-📁 Project File Structure
-database/ – Contains the database file needed for setup.
-docs/ – Holds project documentation. Note that as updates are made, the docs may not always reflect the latest changes.
-res/ – Includes resources such as images, fonts, and icons.
-⚙️ Installation
-Step 1: Create the Database
-Create a database on your local server with the name blood_bank.
-
-Step 2: Import the Database
-Import the .db file from the database folder.
-
-Step 3: Run the Application
-If running locally, place the project folder inside the htdocs directory (default directory for Apache web server). Then, access the application via:
-📌 http://localhost/blood-bank
-
 🛠 Technology Stack
 Languages Used:
 PHP – Backend processing
@@ -34,14 +19,10 @@ Operating System: Windows 10
 IDE: Visual Studio Code
 Server: Apache (via XAMPP)
 Browser: Google Chrome
+
 🔐 Authentication
 Login Credentials
-Admin Access
-Username: SuperAdmin
-Password: 12345678
-Employee Access
-Username: test_user
-Password: qwertyuiop
+For Admin and User login
 Password Reset Functionality
 To enable password reset functionality, you must create your own SendGrid API Key and integrate it into the code. Without this API key, the password reset feature will not work.
 
